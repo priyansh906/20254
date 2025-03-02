@@ -47,13 +47,13 @@
         var video = document.getElementById("video");
         if (Hls.isSupported()) {
           var hls = new Hls();
-          hls.loadSource("https://cdnt20.t20hd.cfd/live/m3-index.m3u8");
+          hls.loadSource("https://customer-mjkjmlbjgn5ywfcu.cloudflarestream.com/ca8411648eedb665c32a757d3369b720/manifest/video.m3u8");
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
             video.play();
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-          video.src = "https://cdnt20.t20hd.cfd/live/m3-index.m3u8";
+          video.src = "https://customer-mjkjmlbjgn5ywfcu.cloudflarestream.com/ca8411648eedb665c32a757d3369b720/manifest/video.m3u8";
           video.addEventListener("canplay", function () {
             video.play();
           });
