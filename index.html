@@ -47,13 +47,13 @@
         var video = document.getElementById("video");
         if (Hls.isSupported()) {
           var hls = new Hls();
-          hls.loadSource("https://cdn.hoichoi24.com/hoichoi24.com-T-sports/video.m3u8");
+          hls.loadSource("https://wikihznew.newkso.ru/wikihz/wikicric1/mono.m3u8");
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
             video.play();
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-          video.src = "https://cdn.hoichoi24.com/hoichoi24.com-T-sports/video.m3u8";
+          video.src = "https://wikihznew.newkso.ru/wikihz/wikicric1/mono.m3u8";
           video.addEventListener("canplay", function () {
             video.play();
           });
